@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="utf-8">
+    <title>勤怠管理サンプル</title>
+    <link href="/css/index.css" rel="stylesheet">
+    <script src="/js/string.js" defer></script>
+    <script src="/js/constant.js" defer></script>
+    <script src="/js/common.js" defer></script>
+    <script src="/js/setup-db.js" defer></script>
+    <script src="/js/index.js" defer></script>
+</head>
+
+<body>
+    <header class="header">
+        <button class="button-menu">TODO:メニュー</button>
+        <nav>
+            <ul>
+                <li><a href="/help.html">ヘルプ</a></li>
+                <li><a href="#">2段目</a></li>
+                <li><a href="#">3段目</a></li>
+                <li><a href="#">4段目</a></li>
+            </ul>
+        </nav>
+        <h1 class="site-title">勤怠管理サンプル</h1>
+        <p class="site-sub-title" id="now-date"></p>
+        <div class="buttons">
+            <button class="button-work">出勤</button>
+            <button class="button-leaved">退勤</button>
+        </div>
+    </header>
+    <main class="main">
+        <section class="trans-month">
+            <!-- TODO: 本来は11月とか具体的な月名表示 -->
+            <button class="button-last-month">←前月</button>
+            <button class="button-next-month">次月→</button>
+        </section>
+        <section class="kintai-list">
+            <table class="table-content">
+                <thead class="table-haeder">
+                    <tr>
+                        <th>日付</th>
+                        <th>曜日</th>
+                        <th>出社</th>
+                        <th>退社</th>
+                        <th>休憩</th>
+                        <th>作業時間</th>
+                        <th>編集</th>
+                    </tr>
+                </thead>
+
+                <tfoot class="table-footer">
+
+                </tfoot>
+
+                <tbody class="table-body">
+                    <!-- jsでタグを作成 -->
+                </tbody>
+            </table>
+        </section>
+        <dialog class="edit-modal">
+            <div class="modal-header">
+                <h1>勤怠編集</h1>
+                <input class="button-modal-close" id="close" type="image" src="/images/app_button_close.png" width="25" height="25">
+            </div>
+            <div class="modal-body">
+                <p class="modal-input-label">日付</p>
+                <input id="modal-date" class="modal-text-box" type="date" readonly></input>
+                <p class="modal-input-label">出社</p>
+                <input id="modal-work" class="modal-text-box" type="time" placeholder="例）9:45" step="900"></input>
+                <p class="modal-input-label">退社</p>
+                <input id="modal-leaved" class="modal-text-box" type="time" placeholder="例）19:00" step="900"></input>
+                <p class="modal-input-label">休憩</p>
+                <input id="modal-break" class="modal-text-box" type="time" placeholder="例）1:00" step="900"></input>
+            </div>
+            <br>
+            <footer class="modal-footer">
+                <div class="buttons">
+                    <button class="button-modal-update" id="update" type="button">保存</button>
+                    <button class="button-modal-delete" id="delete" type="button">削除</button>
+                </div>
+            </footer>
+        </dialog>
+    </main>
+    <footer class="footer">
+        <p class="copyright">Copyright © 2020 Y-WATANABE</p>
+    </footer>
+</body>
+
+</html>

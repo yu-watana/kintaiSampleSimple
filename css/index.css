@@ -1,0 +1,178 @@
+/* ダイアログの閉じるボタンのレイアウト調整 */
+
+a {
+    color: #fff;
+    font-weight: bold;
+    font-size: 1rem;
+    text-decoration: none;
+    white-space: nowrap;
+}
+
+body {
+    font-size: 12px;
+}
+
+nav {
+    background: #333;
+    position: absolute;
+    z-index: 1;
+    top: 3.125rem;
+    right: 0;
+    overflow-x: hidden;
+    text-align: center;
+    width: 0;
+}
+
+th,
+td {
+    border: 1px solid #ec5b18;
+    padding: .5rem 1.2rem;
+    font-size: 1rem;
+}
+
+input {
+    padding: 10px;
+}
+
+.header {
+    background: #ec5b18;
+    padding: .5rem;
+    text-align: center;
+}
+
+.footer {
+    background: #ec5b18;
+    color: #fff;
+    text-align: center;
+}
+
+.button-menu {
+    border: 1px solid #ec5b18;
+    background: transparent;
+    color: #fff;
+    font-size: 1rem;
+    cursor: pointer;
+    line-height: 1;
+    display: block;
+    margin: 0 0 0 auto;
+}
+
+nav.open-menu {
+    width: 30%;
+    text-align: center;
+}
+
+.site-title {
+    font-size: 2rem;
+    color: #fff;
+}
+
+.site-sub-title {
+    font-size: 1rem;
+    color: #fff;
+}
+
+.buttons {
+    margin: 10px;
+}
+
+.button-work,
+.button-leaved,
+.button-last-month,
+.button-next-month,
+.button-modal-update,
+.button-modal-delete {
+    display: inline-block;
+    padding: 10px 1.4rem;
+    border-radius: 8px;
+    background-color: #333;
+    color: #fff;
+    text-decoration: none;
+    letter-spacing: 1px;
+    font-size: 1.2rem;
+}
+
+.button-next-month {
+    float: right;
+}
+
+.button-edit {
+    display: inline-block;
+    border-radius: 8px;
+    padding: .5rem .5rem;
+    background-color: #333;
+    color: #fff;
+    letter-spacing: 1px;
+}
+
+button:hover:enabled {
+    background: #161616;
+    color: #ffffff79;
+}
+
+button:disabled {
+    opacity: 0.3;
+}
+
+.button-showy {
+    background-color: #D29E04;
+}
+
+.button-ghost {
+    border: 1px solid #fff;
+    background-color: #ffffff26;
+}
+
+.main {
+    margin: 2rem;
+}
+
+.table-content {
+    background: #fff;
+    border-collapse: collapse;
+    border: 2px solid #ec5b18;
+    letter-spacing: 1px;
+    font-size: 0.8rem;
+    margin: auto;
+}
+
+.table-haeder {
+    background: #ec5b18;
+    color: #fff;
+}
+
+.table-footer-value {
+    border: 2px solid #ec5b18;
+    font-size: 1rem;
+    font-weight: bolder;
+}
+
+.edit-modal {
+    width: 300px;
+    border-color: #ec5b18;
+    color: #333;
+    text-align: center;
+}
+
+.modal-input-label {
+    font-weight: bold;
+    font-size: medium;
+}
+
+.modal-text-box {
+    font-size: 1.1rem;
+    font-weight: bold;
+    border-color: #ec5b18;
+}
+
+.modal-header {
+    display: inline-flex;
+}
+
+.modal-button-close {
+    float: right;
+}
+
+.modal-footer {
+    display: inline-block;
+}
